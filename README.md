@@ -1,2 +1,2 @@
-# compete
+# Compete
 Competitive gaming platform
