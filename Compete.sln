@@ -13,9 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compete.Library.Api", "Compete.Library.Api\Compete.Library.Api.csproj", "{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B} = {383AA488-5FA4-4DA1-B665-479F25A79F8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A7502AF-5C86-48DA-91F7-51A94E8F12F2}
