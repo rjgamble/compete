@@ -1,0 +1,2 @@
+# ecompete
+Competitive gaming platform
