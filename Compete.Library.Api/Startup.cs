@@ -1,4 +1,5 @@
 using Compete.Library.Api.Entities.Models;
+using Compete.Library.Api.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,7 @@ namespace Compete.Library.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDependencies(_applicationSettings);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

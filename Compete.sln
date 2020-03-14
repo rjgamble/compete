@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compete.Library.Api", "Compete.Library.Api\Compete.Library.Api.csproj", "{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compete.Library.Api", "Compete.Library.Api\Compete.Library.Api.csproj", "{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compete.Common.Entities", "Compete.Common.Entities\Compete.Common.Entities.csproj", "{2B85F9E1-9204-4A53-A99C-49AA3F9AA271}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +27,17 @@ Global
 		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B85F9E1-9204-4A53-A99C-49AA3F9AA271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B85F9E1-9204-4A53-A99C-49AA3F9AA271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B85F9E1-9204-4A53-A99C-49AA3F9AA271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B85F9E1-9204-4A53-A99C-49AA3F9AA271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{19EF66C6-BD58-4227-8EEF-333EA3B73A9B} = {383AA488-5FA4-4DA1-B665-479F25A79F8D}
+		{2B85F9E1-9204-4A53-A99C-49AA3F9AA271} = {383AA488-5FA4-4DA1-B665-479F25A79F8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1A7502AF-5C86-48DA-91F7-51A94E8F12F2}
