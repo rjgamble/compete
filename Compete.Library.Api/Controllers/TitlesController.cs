@@ -1,42 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Compete.Common.Entities.Library;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Compete.Library.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class TitlesController : Controller
+    public class TitlesController : BaseController
     {
-        // GET: api/<controller>
+        public TitlesController(ILogger logger) : base(logger)
+        {
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(new List<Title>());
         }
 
-        // GET api/<controller>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            return Ok(new Title());
         }
 
-        // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult Post([FromBody]Title title)
         {
+            return Created(Url.RouteUrl(title), new Title());
         }
 
-        // PUT api/<controller>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public IActionResult Put(int id, [FromBody]Title title)
         {
+            return Ok(new Title());
         }
-
-        // DELETE api/<controller>/5
+        
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            return NoContent();
         }
     }
 }
